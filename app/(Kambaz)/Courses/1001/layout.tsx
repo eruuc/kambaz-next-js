@@ -1,6 +1,7 @@
-// import { ReactNode } from "react";
-// import CourseNavigation from "./Navigation";
-// export default async function CoursesLayout(
+import { ReactNode } from "react";
+import CourseNavigation from "./Navigation";
+export default async function CoursesLayout(){
+  return (<div></div>);}
 //   { children, params }: Readonly<{ children: ReactNode; params: { cid: string }; }>) {
 //  const { cid } = params;
 //  return (
