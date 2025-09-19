@@ -80,7 +80,7 @@ export default function Dashboard() {
         </div>
         <div className="wd-dashboard-course">
           <Link href="/Courses/1001" className="wd-dashboard-course-link">
-            <Image src="/images/reactjs.jpg" width={200} height={150} alt="React logo"/>
+            {/* <Image src="/images/reactjs.jpg" width={200} height={150} alt="React logo"/> */}
             <div>
               <h5> KORE1001 Intro to Korean </h5>
               <p className="wd-dashboard-course-title">
