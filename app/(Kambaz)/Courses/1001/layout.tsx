@@ -1,9 +1,24 @@
 import { ReactNode } from "react";
+import { FaAlignJustify } from "react-icons/fa";
 import CourseNavigation from "./Navigation";
 export default async function CoursesLayout(){
-  return (<div></div>);}
-//   { children, params }: Readonly<{ children: ReactNode; params: { cid: string }; }>) {
+  //   { children, params }: Readonly<{ children: ReactNode; params: { cid: string }; }>) {
 //  const { cid } = params;
+  return (
+    <div id="wd-courses">
+    <h2 className="text-danger">
+        <FaAlignJustify className="me-4 fs-4 mb-1" />
+        Course 1001 </h2> <hr />
+    <div className="d-flex">
+      <div className="d-none d-md-block">
+        <CourseNavigation />
+      </div>
+      <div className="flex-fill">
+        
+      </div></div>
+  </div>
+);}
+
 //  return (
 //    <div id="wd-courses">
 //      <h2>Courses {cid}</h2>
