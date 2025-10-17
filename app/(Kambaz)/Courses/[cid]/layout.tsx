@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import CourseNavigation from "./Navigation";
 import { courses } from "../../Database";
-export default async function CoursesLayout({ children, params }: Readonly<{ children: ReactNode; params: { cid: string }; }>) {
+export async function CoursesLayout({ children, params }: Readonly<{ children: ReactNode; params: { cid: string }; }>) {
   const { cid } = params;
   const course = courses.find((course) => course._id === cid);
   return (
