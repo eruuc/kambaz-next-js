@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
 import * as db from "./Database";
 import { Row, Col, Card, CardImg, CardBody, CardTitle, CardText, Button } from "react-bootstrap";
@@ -10,7 +11,7 @@ export default function Dashboard() {
       <h2 id="wd-dashboard-published">Published Courses ({courses.length})</h2> <hr />
       <div id="wd-dashboard-courses">
         <Row xs={1} md={5} className="g-4">
-          {courses.map((course: any) => ( /* eslint-disable  @typescript-eslint/no-explicit-any */
+          {courses.map((course: any) => (
             <Col key={course.id} className="wd-dashboard-course" style={{ width: "300px" }}>
               <Card>
                 <Link href={`/Courses/${course._id}/Home`}
