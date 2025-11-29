@@ -1,4 +1,4 @@
-import { FormSelect, FormCheck, FormLabel, FormControl, FormRange, Row, Col, Form, Button, InputGroup, InputGroupText } from "react-bootstrap";
+import { FormSelect, FormCheck, FormLabel, FormControl, Row, Col, Form, Button, InputGroup } from "react-bootstrap";
 
 export default function BootstrapForms () {
     return (
@@ -29,19 +29,19 @@ export default function BootstrapForms () {
     <div id="wd-css-styling-range-and-sliders">
         <h3>Range</h3>
         <FormLabel>Example range</FormLabel>
-        <FormRange min="0" max="5" step="0.5" />
+        <FormControl type="range" min="0" max="5" step="0.5" />
     </div>
     <div id="wd-css-styling-addons">
         <h3>Addons</h3>
         <InputGroup className="mb-3">
-            <InputGroupText>$</InputGroupText>
-            <InputGroupText>0.00</InputGroupText>
+            <InputGroup.Text>$</InputGroup.Text>
+            <InputGroup.Text>0.00</InputGroup.Text>
             <FormControl />
         </InputGroup>
         <InputGroup>
             <FormControl />
-            <InputGroupText>$</InputGroupText>
-            <InputGroupText>0.00</InputGroupText>
+            <InputGroup.Text>$</InputGroup.Text>
+            <InputGroup.Text>0.00</InputGroup.Text>
         </InputGroup>
     </div>
     <div id="wd-css-responsive-forms-1">
