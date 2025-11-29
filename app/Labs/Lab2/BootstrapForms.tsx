@@ -34,14 +34,14 @@ export default function BootstrapForms () {
     <div id="wd-css-styling-addons">
         <h3>Addons</h3>
         <InputGroup className="mb-3">
-            <InputGroup.Text>$</InputGroup.Text>
-            <InputGroup.Text>0.00</InputGroup.Text>
+            <span className="input-group-text">$</span>
+            <span className="input-group-text">0.00</span>
             <FormControl />
         </InputGroup>
         <InputGroup>
             <FormControl />
-            <InputGroup.Text>$</InputGroup.Text>
-            <InputGroup.Text>0.00</InputGroup.Text>
+            <span className="input-group-text">$</span>
+            <span className="input-group-text">0.00</span>
         </InputGroup>
     </div>
     <div id="wd-css-responsive-forms-1">
