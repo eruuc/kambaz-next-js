@@ -1,11 +1,17 @@
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "react-bootstrap";
+import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, FormControl } from "react-bootstrap";
 import { FaPlus } from "react-icons/fa6";
 import GreenCheckmark from "./GreenCheckmark";
 
-export default function ModulesControls() {
+export default function ModulesControls({ setModuleName, moduleName, addModule }: { setModuleName: (name: string) => void; moduleName: string; addModule: () => void }) {
   return (
     <div id="wd-modules-controls" className="text-nowrap">
-      <Button variant="danger" size="lg" className="me-1 float-end" id="wd-add-module-btn">
+      <FormControl
+        placeholder="Module Name"
+        value={moduleName}
+        onChange={(e) => setModuleName(e.target.value)}
+        className="w-25 float-start me-2"
+      />
+      <Button variant="danger" size="lg" className="me-1 float-end" id="wd-add-module-btn" onClick={addModule}>
         <FaPlus className="position-relative me-2" style={{ bottom: "1px" }} />
         Module
       </Button>
