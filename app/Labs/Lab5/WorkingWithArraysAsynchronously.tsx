@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ListGroup, ListGroupItem, FormControl } from "react-bootstrap";
-import { FaTrash, FaPlusCircle, FaPencil } from "react-icons/fa";
+import { FaTrash, FaPlusCircle, FaPencilAlt } from "react-icons/fa";
 import { TiDelete } from "react-icons/ti";
 import * as client from "./client";
 
@@ -93,7 +93,7 @@ export default function WorkingWithArraysAsynchronously() {
               className="text-danger float-end me-2 fs-3"
               id="wd-delete-todo"
             />
-            <FaPencil
+            <FaPencilAlt
               onClick={() => editTodo(todo)}
               className="text-primary float-end me-2 mt-1"
             />
