@@ -1,6 +1,7 @@
 function add(a: number, b: number) {
   return a + b;
 }
+
 export default function LegacyFunctions() {
   const twoPlusFour = add(2, 4);
   console.log(twoPlusFour);
@@ -11,4 +12,5 @@ export default function LegacyFunctions() {
       twoPlusFour = {twoPlusFour}    <br />
       add(2, 4) = {add(2, 4)}        <hr />
     </div>
-);}
+  );
+}
