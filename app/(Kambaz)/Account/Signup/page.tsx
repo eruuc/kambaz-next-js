@@ -39,9 +39,9 @@ export default function Signup() {
         placeholder="password"
         type="password"
       />
-      <button onClick={signup} className="wd-signup-btn btn btn-primary mb-2 w-100">
+      <Button onClick={signup} variant="primary" className="wd-signup-btn mb-2 w-100">
         Sign up
-      </button>
+      </Button>
       <br />
       <Link href="/Account/Signin" className="wd-signin-link">
         Sign in
