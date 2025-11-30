@@ -34,7 +34,7 @@ export default function WorkingWithObjectsAsynchronously() {
         rows={3}
         defaultValue={assignment.description}
         className="form-control mb-2"
-        onChange={(e) => setAssignment({ ...assignment, description: e.target.value })}
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setAssignment({ ...assignment, description: e.target.value })}
       />
       <FormControl
         type="date"
