@@ -1,0 +1,43 @@
+[
+  {
+    "_id": "A101",
+    "title": "A1 - ENV + HTML",
+    "course": "RS101",
+    "points": 100,
+    "dueDate": "2024-12-31",
+    "availableFrom": "2024-01-01",
+    "availableUntil": "2024-12-31",
+    "description": "The assignment is available online Submit a link to the landing page of"
+  },
+  {
+    "_id": "A102",
+    "title": "A2 - CSS + BOOTSTRAP",
+    "course": "RS101",
+    "points": 100,
+    "dueDate": "2024-12-31",
+    "availableFrom": "2024-01-01",
+    "availableUntil": "2024-12-31",
+    "description": "Create a responsive website using CSS and Bootstrap"
+  },
+  {
+    "_id": "A103",
+    "title": "A3 - JAVASCRIPT + REACT",
+    "course": "RS101",
+    "points": 100,
+    "dueDate": "2024-12-31",
+    "availableFrom": "2024-01-01",
+    "availableUntil": "2024-12-31",
+    "description": "Build a React application with JavaScript"
+  },
+  {
+    "_id": "A201",
+    "title": "A1 - Aerodynamics Basics",
+    "course": "RS102",
+    "points": 100,
+    "dueDate": "2024-12-31",
+    "availableFrom": "2024-01-01",
+    "availableUntil": "2024-12-31",
+    "description": "Introduction to aerodynamics principles"
+  }
+]
+

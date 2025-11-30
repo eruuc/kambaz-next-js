@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "123",
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "loginId": "001234561S",
+    "section": "S101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-01",
+    "totalActivity": "10:21:32"
+  },
+  {
+    "_id": "234",
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "loginId": "001234562S",
+    "section": "S101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-02",
+    "totalActivity": "12:30:00"
+  },
+  {
+    "_id": "345",
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "loginId": "001234563S",
+    "section": "S101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-03",
+    "totalActivity": "08:15:45"
+  },
+  {
+    "_id": "456",
+    "firstName": "Clark",
+    "lastName": "Kent",
+    "loginId": "001234564S",
+    "section": "S101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-04",
+    "totalActivity": "15:45:20"
+  },
+  {
+    "_id": "567",
+    "firstName": "Diana",
+    "lastName": "Prince",
+    "loginId": "001234565S",
+    "section": "S101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-05",
+    "totalActivity": "09:30:15"
+  },
+  {
+    "_id": "789",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "loginId": "001234566S",
+    "section": "S102",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-06",
+    "totalActivity": "11:20:30"
+  },
+  {
+    "_id": "890",
+    "firstName": "Natasha",
+    "lastName": "Romanoff",
+    "loginId": "001234567S",
+    "section": "S102",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-07",
+    "totalActivity": "13:45:00"
+  },
+  {
+    "_id": "901",
+    "firstName": "John",
+    "lastName": "Doe",
+    "loginId": "001234568F",
+    "section": "S101",
+    "role": "FACULTY",
+    "lastActivity": "2020-10-08",
+    "totalActivity": "20:00:00"
+  }
+]
+

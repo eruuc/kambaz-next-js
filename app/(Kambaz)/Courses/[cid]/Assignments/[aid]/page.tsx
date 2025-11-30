@@ -1,11 +1,19 @@
+"use client";
+
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import * as db from "../../../../Database";
+
 export default function AssignmentEditor() {
+  const { cid, aid } = useParams();
+  const assignment = db.assignments.find((a: any) => a._id === aid);
   return (
     <div id="wd-assignments-editor">
       <label htmlFor="wd-name">Assignment Name</label>
-      <input id="wd-name" defaultValue="A1 - ENV + HTML" /><br /><br />
+      <input id="wd-name" defaultValue={assignment?.title || "A1 - ENV + HTML"} /><br /><br />
       <label htmlFor="wd-description">Description</label>
       <textarea id="wd-description">
-        The assignment is available online Submit a link to the landing page of
+        {assignment?.description || "The assignment is available online Submit a link to the landing page of"}
       </textarea>
       <br />
       <table>
@@ -15,7 +23,7 @@ export default function AssignmentEditor() {
               <label htmlFor="wd-points">Points</label>
             </td>
             <td>
-              <input id="wd-points" defaultValue={100} />
+              <input id="wd-points" defaultValue={assignment?.points || 100} />
             </td>
           </tr>
           <tr>
@@ -84,7 +92,7 @@ export default function AssignmentEditor() {
               <label htmlFor="wd-due-date">Due</label>
             </td>
             <td>
-              <input type="date" id="wd-due-date" defaultValue="2024-12-31" />
+              <input type="date" id="wd-due-date" defaultValue={assignment?.dueDate || "2024-12-31"} />
             </td>
           </tr>
           <tr>
@@ -92,7 +100,7 @@ export default function AssignmentEditor() {
               <label htmlFor="wd-available-from">Available from</label>
             </td>
             <td>
-              <input type="date" id="wd-available-from" defaultValue="2024-01-01" />
+              <input type="date" id="wd-available-from" defaultValue={assignment?.availableFrom || "2024-01-01"} />
             </td>
           </tr>
           <tr>
@@ -100,11 +108,14 @@ export default function AssignmentEditor() {
               <label htmlFor="wd-available-until">Until</label>
             </td>
             <td>
-              <input type="date" id="wd-available-until" defaultValue="2024-12-31" />
+              <input type="date" id="wd-available-until" defaultValue={assignment?.availableUntil || "2024-12-31"} />
             </td>
           </tr>
         </tbody>
       </table>
+      <br />
+      <Link href={`/Courses/${cid}/Assignments`} className="btn btn-secondary me-2">Cancel</Link>
+      <Link href={`/Courses/${cid}/Assignments`} className="btn btn-primary">Save</Link>
     </div>
   );
 }
