@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import * as db from "../../Database";
+import * as db from "../../../Database";
 
 export default function Assignments() {
   const { cid } = useParams();
